@@ -2,7 +2,7 @@ import axios from "axios";
 
 // ⚠️  This reads from .env — update VITE_API_URL after deploying to Railway
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://mern-item-manager-production-96e8.up.railway.app/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://mern-item-manager-production-96e8.up.railway.app",
 });
 
 export const getItems    = ()         => API.get("/items");
